@@ -1,0 +1,19 @@
+package makeMyTrip;
+
+import org.testng.annotations.Test;
+
+import utils.ConfigFileReader;
+
+public class LoginTest
+{
+	 ConfigFileReader configFileReader;
+	@Test
+	public void login()
+	{
+		configFileReader.getDriverPath();
+		configFileReader.getApplicationUrl();
+		
+	}
+	
+
+}

@@ -1,0 +1,28 @@
+package seleniumPracticeTest;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+
+public class FileUploadTest
+{
+   
+	
+	public static void fileupload() // main(String args[])
+	{
+		System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://softwaretestingplace.blogspot.com/2015/10/sample-web-page-to-test.html");
+		WebElement ele = driver.findElement(By.xpath("//input[@id='uploadfile']"));
+		Actions actions = new Actions(driver);
+		actions.moveToElement(ele);
+		actions.perform();
+        ele.sendKeys("C:\\Users\\Public\\Pictures\\Sample Pictures\\Desert.jpg");
+        System.out.println("uploaded");
+		
+	}
+	
+}

@@ -1,0 +1,11 @@
+package pages;
+
+import org.openqa.selenium.WebElement;
+
+public class LoginPage
+{
+	
+	@FindBy(xpath = "//span[contains(text(),'log-in')]")
+	public WebElement logintxt;
+
+}

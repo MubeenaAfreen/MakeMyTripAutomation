@@ -1,0 +1,33 @@
+package makeMyTrip;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import utils.ConfigFileReader;
+
+public class LoginTest
+{
+	 ConfigFileReader configFileReader;
+	 
+	 @BeforeTest
+	 public void setupBrowser()
+	 {
+		 String url = configFileReader.getApplicationUrl();
+			System.setProperty("webdriver.chrome.driver", configFileReader.getDriverPath());
+			WebDriver driver = new ChromeDriver();
+			 driver.manage().window().maximize();
+			driver.get(url);
+	 }
+	 
+	@Test
+	public void login()
+	{
+		
+		
+		
+	}
+	
+
+}

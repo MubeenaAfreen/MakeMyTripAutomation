@@ -1,0 +1,28 @@
+package pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class FlightPage
+{
+	@FindBy(xpath="//input[@placeholder='From']")
+	public WebElement fromCity;
+	
+	@FindBy(xpath="//input[@placeholder='To']")
+	WebElement toCity;
+	
+	@FindBy(xpath="")
+	WebElement departureDate;
+	
+	@FindBy(xpath="")
+	WebElement searchButton;
+	
+	@FindBy(xpath="")
+	WebElement returnDate;
+	
+	
+	
+	
+	
+
+}

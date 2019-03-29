@@ -1,0 +1,13 @@
+package seleniumPracticeTest;
+
+import org.testng.annotations.Test;
+
+public class HandlingMultipleTabs
+{
+
+	@Test
+	public static void handlingtabs()
+	{
+		
+	}
+}
