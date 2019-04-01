@@ -28,8 +28,13 @@ public class OnewayFlightBookTest
 	public void searchAFlight()
 	{
 		WebElement fromCity = flightPage.getFromCity();
+		//fromCity.getAttribute("placeholder");
+		System.out.println("found");
 		fromCity.sendKeys("Mumbai");
-		fromCity.click();
+		WebElement firstEle = flightPage.getFirstElement();
+		System.out.println("first found");
+		firstEle.click();
+		
 	}
 
 }
