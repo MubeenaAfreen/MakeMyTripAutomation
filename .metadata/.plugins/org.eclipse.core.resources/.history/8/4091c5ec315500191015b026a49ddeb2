@@ -22,7 +22,7 @@ public class BusPage
 	@FindBy(xpath="//button[contains(text(),'Search')]")
 	public WebElement searchButton;
 	
-	@FindBy(xpath="//li[@id='react-autowhatever-1-section-0-item-0']")
+	@FindBy(xpath="")
 	public List<WebElement> fromCityList;
 	
 	public BusPage(WebDriver driver)

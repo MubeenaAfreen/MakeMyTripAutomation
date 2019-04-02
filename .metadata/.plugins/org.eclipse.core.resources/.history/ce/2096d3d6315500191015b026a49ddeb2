@@ -30,7 +30,6 @@ public class BookABusTest
 	{
 	    busPage.getBusOption().click();
 	    busPage.getFromCity().click();
-	    busPage.getfromPlaceHolder().sendKeys("Bangalore");
 	    
 	}
 

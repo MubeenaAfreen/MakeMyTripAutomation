@@ -22,15 +22,12 @@ public class BookABusTest
 		driver.manage().window().maximize();
 		String url = configFileReader.getApplicationUrl();
 		driver.get(url);
-		busPage = new BusPage(driver);
+		busPage = new FlightPage(driver);
 	}
 	
 	@Test
 	public void searchABus()
 	{
-	    busPage.getBusOption().click();
-	    busPage.getFromCity().click();
-	    busPage.getfromPlaceHolder().sendKeys("Bangalore");
 	    
 	}
 

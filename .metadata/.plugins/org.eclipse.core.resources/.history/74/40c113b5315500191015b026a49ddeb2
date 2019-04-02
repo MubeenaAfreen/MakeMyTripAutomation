@@ -1,7 +1,5 @@
 package pages;
 
-import java.util.List;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,9 +19,6 @@ public class BusPage
 	
 	@FindBy(xpath="//button[contains(text(),'Search')]")
 	public WebElement searchButton;
-	
-	@FindBy(xpath="//li[@id='react-autowhatever-1-section-0-item-0']")
-	public List<WebElement> fromCityList;
 	
 	public BusPage(WebDriver driver)
 	{
@@ -47,11 +42,4 @@ public class BusPage
     {
     	return searchButton;
     }
-    public List<WebElement> getFromCityList()
-    {
-    	return fromCityList;
-    }
-    
-    
-    
 }

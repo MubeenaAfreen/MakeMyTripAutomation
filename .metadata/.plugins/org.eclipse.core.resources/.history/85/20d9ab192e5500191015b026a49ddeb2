@@ -5,7 +5,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import pages.BusPage;
 import pages.FlightPage;
 import utils.ConfigFileReader;
 
@@ -13,7 +12,7 @@ public class BookABusTest
 {
 	WebDriver driver;
 	ConfigFileReader configFileReader = new ConfigFileReader();
-	BusPage busPage;
+	FlightPage flightPage;
 	@BeforeTest
 	public void setUpBrowser()
 	{
@@ -22,16 +21,13 @@ public class BookABusTest
 		driver.manage().window().maximize();
 		String url = configFileReader.getApplicationUrl();
 		driver.get(url);
-		busPage = new BusPage(driver);
+		flightPage = new FlightPage(driver);
 	}
 	
 	@Test
-	public void searchABus()
+	public void searchAFlight()
 	{
-	    busPage.getBusOption().click();
-	    busPage.getFromCity().click();
-	    busPage.getfromPlaceHolder().sendKeys("Bangalore");
-	    
+	
 	}
 
 }
