@@ -1,0 +1,36 @@
+package bookAFlight;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import pages.FlightPage;
+
+public class Sample
+{
+	@Test
+	public void search()
+	{
+		System.setProperty("webdriver.chrome.driver", "E:\\chromedriver.exe");				
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		String url = "https://www.makemytrip.com";
+		driver.get(url);
+		
+		List<WebElement> Elements = driver.findElements(By.className(className));
+		Boolean ElementExists = false;
+		for(int counter = 0; counter < Elements.size(); counter++)
+		{
+		    if(Elements.get(counter).getText().equals("The Popup text"))
+		    		{
+		        ElementExists = true;
+		    }
+		}
+	
+	}
+
+}

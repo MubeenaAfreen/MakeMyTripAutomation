@@ -1,0 +1,11 @@
+package pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class BusPage 
+{
+	@FindBy(xpath="//input[@id='fromCity']")
+	public WebElement fromCity;
+
+}

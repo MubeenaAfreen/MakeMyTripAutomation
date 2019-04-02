@@ -1,0 +1,46 @@
+package bookAFlight;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import pages.FlightPage;
+import utils.ConfigFileReader;
+
+public class OnewayFlightBookTest
+{
+	ConfigFileReader configFileReader = new ConfigFileReader();
+	FlightPage flightPage;
+	@BeforeTest
+	public void setUpBrowser()
+	{
+		System.setProperty("webdriver.chrome.driver", configFileReader.getDriverPath());				
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		String url = configFileReader.getApplicationUrl();
+		driver.get(url);
+		flightPage = new FlightPage(driver);
+	}
+	
+	@Test
+	public void searchAFlight()
+	{
+	    flightPage.getFromCity().click();
+		flightPage.getFromPlaceHolder().sendKeys("Mumbai");
+		flightPage.getFromCityList().get(0).click();
+		
+		flightPage.getToCity().click();
+		flightPage.getToPlaceHolder().sendKeys("Bangalore");
+		flightPage.getToCityList().get(0).click();
+		
+		flightPage.getSearchButton().click();		
+	}
+	
+	
+
+}
