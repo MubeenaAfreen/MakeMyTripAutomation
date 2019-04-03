@@ -1,19 +1,42 @@
 package makeMyTrip;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import utils.ExcelUtils;
+
 public class DataProviderLogin 
 {
+     public String sTestCaseName;	 
+	 private int iTestCaseRow;	
+	 WebDriver driver;
+	 
 	@DataProvider(name="Login")
-	public static Object[][] credentials()
-	{
-		return Object[][];
+	public Object[][] credentials() throws Exception 
+	{		
+		ExcelUtils.setExcelFile("TestData.xlsx","Sheet1");
+		 
+	    sTestCaseName = this.toString();	 
+	    sTestCaseName = ExcelUtils.getTestCaseName(this.toString());
+	    iTestCaseRow = ExcelUtils.getRowContains(sTestCaseName,0);	 
+	    Object[][] testObjArray = ExcelUtils.getTableArray("TestData.xlsx","Sheet1",iTestCaseRow);
+	 
+	      return (testObjArray);
 	}
       
 	@Test(dataProvider = "Login")
-	public void Logintest()
+	public void Logintest(String sUsername, String sPassword)
 	{
+		System.setProperty("webdriver.chrome.driver", "E:\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://www.makemytrip.com");
+		driver.findElement(By.xpath("//p[contains(text(),'Login or Create Account')]")).click();
+		driver.findElement(By.xpath("//input[@id='username']")).sendKeys(sUsername);
+		driver.findElement(By.xpath("//input[@id='password']")).sendKeys(sPassword);
+		
 		
 	}
 }

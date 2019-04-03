@@ -23,8 +23,7 @@ public class LoginTest
 			loginpage = new LoginPage(driver);
 			 driver.manage().window().maximize();
 			String url = configFileReader.getApplicationUrl();
-			driver.get(url);
-			log.debug("getting url failed");
+			driver.get(url);			
 	 }
 	 
 	@Test

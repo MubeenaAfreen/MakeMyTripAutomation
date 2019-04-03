@@ -1,0 +1,34 @@
+package utils;
+
+
+
+import org.openqa.selenium.WebDriver;
+
+
+
+public class DataProvider 
+{
+	 private String sTestCaseName;
+	 
+	 private int iTestCaseRow;
+	 
+	 WebDriver driver;
+	 
+
+	 @DataProvider	 
+	  public Object[][] Authentication() throws Exception
+	 {
+	 
+	 ExcelUtils.setExcelFile("TestData.xlsx","Sheet1");
+	 
+	    sTestCaseName = this.toString();	 
+	    sTestCaseName = ExcelUtils.getTestCaseName(this.toString());
+	    iTestCaseRow = ExcelUtils.getRowContains(sTestCaseName,0);	 
+	    Object[][] testObjArray = ExcelUtils.getTableArray("TestData.xlsx","Sheet1",iTestCaseRow);
+	 
+	      return (testObjArray);
+	 
+	 }
+}
+	
+	
