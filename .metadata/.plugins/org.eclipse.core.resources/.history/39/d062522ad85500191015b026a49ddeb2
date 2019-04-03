@@ -1,0 +1,13 @@
+package makeMyTrip;
+
+import org.testng.annotations.DataProvider;
+
+public class DataProviderLogin 
+{
+	@DataProvider(name="Login")
+	public Object[][] credentials()
+	{
+		return 
+	}
+
+}

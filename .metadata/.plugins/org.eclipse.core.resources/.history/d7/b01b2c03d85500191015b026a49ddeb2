@@ -54,7 +54,10 @@ public class SauceLabsDemo
 	        Assert.assertTrue(true);
 	 
 	    }
-	   
+	    /**
+	     * Below we are performing 2 critical actions. Quitting the driver and passing
+	     * the test result to Sauce Labs user interface using the Javascript Executor.
+	     */
 	    @AfterMethod
 	    public void cleanUpAfterTestMethod(ITestResult result) {
 	        ((JavascriptExecutor)driver).executeScript("sauce:job-result=" + (result.isSuccess() ? "passed" : "failed"));

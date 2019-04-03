@@ -16,7 +16,17 @@ public class DataProvider
 	 
 	 WebDriver driver;
 	 
-	
+	 /* @BeforeMethod
+	 
+	  public void beforeMethod() throws Exception {
+	 
+	   driver = new FirefoxDriver();
+	 
+	      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	 
+	      driver.get("http://www.store.demoqa.com"); 
+	 
+	  } */
 	 
 	  public void f(String sUserName, String sPassword) {
 	 
@@ -51,7 +61,7 @@ public class DataProvider
 	   
 	 iTestCaseRow = ExcelUtils.getRowContains(sTestCaseName,0);
 	 
-	     Object[][] testObjArray = ExcelUtils.getTableArray("TestData.xlsx","Sheet1",iTestCaseRow);
+	     Object[][] testObjArray = ExcelUtils.getTableArray("D://ToolsQA//OnlineStore//src//testData//TestData.xlsx","Sheet1",iTestCaseRow);
 	 
 	      return (testObjArray);
 	 

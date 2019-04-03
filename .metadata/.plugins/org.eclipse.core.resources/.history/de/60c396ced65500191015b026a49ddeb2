@@ -1,0 +1,11 @@
+package makeMyTrip;
+
+public class DataProviderLogin 
+{
+	@DataProvider(name='Login')
+	public Object[][] credentials()
+	{
+		
+	}
+
+}
