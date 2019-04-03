@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8850" started-at="2019-04-03T10:39:53Z" finished-at="2019-04-03T10:40:01Z">
+  <suite name="Default suite" duration-ms="11622" started-at="2019-04-03T11:21:09Z" finished-at="2019-04-03T11:21:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8850" started-at="2019-04-03T10:39:53Z" finished-at="2019-04-03T10:40:01Z">
+    <test name="Default test" duration-ms="11622" started-at="2019-04-03T11:21:09Z" finished-at="2019-04-03T11:21:21Z">
       <class name="makeMyTrip.DataProviderLogin">
-        <test-method status="PASS" signature="Logintest(java.lang.String, java.lang.String)[pri:0, instance:makeMyTrip.DataProviderLogin@9f70c54]" name="Logintest" duration-ms="8030" started-at="2019-04-03T16:09:53Z" data-provider="Login" finished-at="2019-04-03T16:10:01Z">
+        <test-method status="PASS" signature="Logintest(java.lang.String, java.lang.String)[pri:0, instance:makeMyTrip.DataProviderLogin@9f70c54]" name="Logintest" duration-ms="10816" started-at="2019-04-03T16:51:10Z" data-provider="Login" finished-at="2019-04-03T16:51:21Z">
           <params>
             <param index="0">
               <value>

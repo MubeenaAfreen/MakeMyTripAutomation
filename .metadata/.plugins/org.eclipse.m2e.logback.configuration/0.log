@@ -3033,3 +3033,15 @@ org.eclipse.core.runtime.CoreException: Launch configuration FileUploadTest refe
 2019-04-03 16:10:43,432 [Worker-335] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\admin\workspace\AutomationProject\seleniumSampleProject\src\main\resources
 2019-04-03 16:10:43,438 [Worker-335] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-04-03 16:10:43,438 [Worker-335] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\admin\workspace\AutomationProject\seleniumSampleProject\src\test\resources
+2019-04-03 16:13:21,093 [Worker-335] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-03 16:13:21,093 [Worker-335] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\admin\workspace\AutomationProject\seleniumSampleProject\src\main\resources
+2019-04-03 16:13:21,095 [Worker-335] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-03 16:13:21,095 [Worker-335] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\admin\workspace\AutomationProject\seleniumSampleProject\src\test\resources
+2019-04-03 16:13:59,020 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-03 16:13:59,036 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\admin\workspace\AutomationProject\seleniumSampleProject\src\main\resources
+2019-04-03 16:13:59,046 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-03 16:13:59,046 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\admin\workspace\AutomationProject\seleniumSampleProject\src\test\resources
+2019-04-03 16:51:01,612 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-03 16:51:01,612 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\admin\workspace\AutomationProject\seleniumSampleProject\src\main\resources
+2019-04-03 16:51:01,612 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-03 16:51:01,612 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\admin\workspace\AutomationProject\seleniumSampleProject\src\test\resources
