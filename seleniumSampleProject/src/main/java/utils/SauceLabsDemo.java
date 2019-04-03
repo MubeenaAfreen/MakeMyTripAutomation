@@ -19,7 +19,8 @@ public class SauceLabsDemo
 	 private WebDriver driver;
 	 
 	    @Test
-	    public void shouldOpenChrome() throws MalformedURLException {
+	    public void shouldOpenChrome() throws MalformedURLException 
+	    {
 	      
 	        String sauceUserName = System.getenv("SAUCE_USERNAME");
 	        String sauceAccessKey = System.getenv("SAUCE_ACCESS_KEY");
