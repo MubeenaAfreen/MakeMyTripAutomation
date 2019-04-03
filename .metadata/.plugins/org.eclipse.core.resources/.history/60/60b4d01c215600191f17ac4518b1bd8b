@@ -18,7 +18,7 @@ public class LoginTest
 	 public void setupBrowser()
 	 {		   
 			System.setProperty("webdriver.chrome.driver", configFileReader.getDriverPath());				
-			log.debug("");
+			log.debug("setting driverpath failed");
 			WebDriver driver = new ChromeDriver();
 			loginpage = new LoginPage(driver);
 			 driver.manage().window().maximize();

@@ -1,3 +1,5 @@
 1554134299974	Delete element
 1554198604492	Rename package 'BusBooking'
 1554288043170	Delete element
+1554303369655	Rename resource 'Log4j.properties'
+1554303468221	Move 'log4j.properties' to 'resources'
